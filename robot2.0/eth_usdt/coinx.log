@@ -1,0 +1,9 @@
+Tue, 10 Jul 2018 10:43:48 robot_fun.py[line:34] INFO ----------------------------------------------------------------
+Tue, 10 Jul 2018 10:43:48 robot_fun.py[line:35] INFO ********** 当前ETH/USDT市场交易价格为:【468.13928334】**********
+Tue, 10 Jul 2018 10:43:48 robot_fun.py[line:36] INFO ----------------------------------------------------------------
+Tue, 10 Jul 2018 10:43:48 robot_fun.py[line:26] INFO 当前获取的价格区间是:[468.042868,468.239850]
+Tue, 10 Jul 2018 10:43:49 robot_fun.py[line:114] INFO 交易币对: ETH_USDT  用户:eu01 挂【买】单的价格:468.15 挂【买】单的数量:0.00106 状态:success
+Tue, 10 Jul 2018 10:43:49 robot_fun.py[line:26] INFO 当前获取的价格区间是:[467.964535,468.214801]
+Tue, 10 Jul 2018 10:43:49 robot_fun.py[line:181] INFO 交易币对: ETH_USDT  用户:eu02 挂【卖】单的价格:468.2 挂【卖】单的数量:0.00776 状态:success
+Tue, 10 Jul 2018 10:43:50 robot_fun.py[line:26] INFO 当前获取的价格区间是:[468.077177,468.291915]
+Tue, 10 Jul 2018 10:43:50 robot_fun.py[line:114] INFO 交易币对: ETH_USDT  用户:eu01 挂【买】单的价格:468.23 挂【买】单的数量:0.00133 状态:success

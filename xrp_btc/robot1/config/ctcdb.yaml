@@ -1,0 +1,13 @@
+ host: "10.0.0.9"
+ user: "coinx-rw"
+ pwd: "c01nx@123"
+ db: "coinx"
+ port: 3306
+ charset: 'utf8'
+
+ localhost: "127.0.0.1"
+ localuser: "root"
+ localpwd: "123456"
+ localdb: "tt"
+ port: 3306
+ charset: 'utf8'

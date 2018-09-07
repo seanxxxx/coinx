@@ -1,0 +1,9 @@
+Wed, 20 Jun 2018 15:36:31 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:36:31 robot_fun.py[line:34] INFO ********** 当前BCH/BTC市场交易价格为:【0.1312406231】**********
+Wed, 20 Jun 2018 15:36:31 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:36:31 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.131183,0.131301]
+Wed, 20 Jun 2018 15:36:31 robot_fun.py[line:111] INFO 交易币对: BCH_BTC  用户:robot01 挂【买】单的价格:0.13 挂【买】单的数量:2.587 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:36:31 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.131116,0.131346]
+Wed, 20 Jun 2018 15:36:31 robot_fun.py[line:177] INFO 交易币对: BCH_BTC  用户:robot02 挂【卖】单的价格:0.13 挂【卖】单的数量:1.385 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:36:34 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.131169,0.131319]
+Wed, 20 Jun 2018 15:36:34 robot_fun.py[line:111] INFO 交易币对: BCH_BTC  用户:robot01 挂【买】单的价格:0.13 挂【买】单的数量:2.662 状态:AccessToken已过期

@@ -1,0 +1,11 @@
+Wed, 20 Jun 2018 11:24:12 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 11:24:12 robot_fun.py[line:34] INFO ********** 当前XRP/ETH市场交易价格为:【0.0010156931】**********
+Wed, 20 Jun 2018 11:24:12 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 11:24:12 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.0010154,0.0010161]
+Wed, 20 Jun 2018 11:24:12 robot_fun.py[line:111] INFO 交易币对: XRP_ETH  用户:tester01 挂【买】单的价格:0.0010154 挂【买】单的数量:2.0 状态:success
+Wed, 20 Jun 2018 11:24:13 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.0010151,0.0010161]
+Wed, 20 Jun 2018 11:24:13 robot_fun.py[line:177] INFO 交易币对: XRP_ETH  用户:tester02 挂【卖】单的价格:0.0010161 挂【卖】单的数量:2.0 状态:success
+Wed, 20 Jun 2018 11:24:14 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.0010154,0.0010162]
+Wed, 20 Jun 2018 11:24:15 robot_fun.py[line:111] INFO 交易币对: XRP_ETH  用户:tester01 挂【买】单的价格:0.0010158 挂【买】单的数量:3.0 状态:success
+Wed, 20 Jun 2018 11:24:16 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.0010149,0.0010164]
+Wed, 20 Jun 2018 11:24:16 robot_fun.py[line:177] INFO 交易币对: XRP_ETH  用户:tester02 挂【卖】单的价格:0.0010157 挂【卖】单的数量:2.0 状态:success

@@ -1,0 +1,29 @@
+Wed, 20 Jun 2018 15:47:04 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:47:04 robot_fun.py[line:34] INFO ********** 当前LTC/BTC市场交易价格为:【0.0144957243】**********
+Wed, 20 Jun 2018 15:47:04 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:47:04 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014491,0.014508]
+Wed, 20 Jun 2018 15:47:04 robot_fun.py[line:111] INFO 交易币对: LTC_BTC  用户:robot13 挂【买】单的价格:0.014497 挂【买】单的数量:2.4 状态:success
+Wed, 20 Jun 2018 15:47:05 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014493,0.014501]
+Wed, 20 Jun 2018 15:47:05 robot_fun.py[line:177] INFO 交易币对: LTC_BTC  用户:robot14 挂【卖】单的价格:0.014496 挂【卖】单的数量:2.06 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:05 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014483,0.014501]
+Wed, 20 Jun 2018 15:47:05 robot_fun.py[line:111] INFO 交易币对: LTC_BTC  用户:robot13 挂【买】单的价格:0.014492 挂【买】单的数量:1.87 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:09 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014491,0.014498]
+Wed, 20 Jun 2018 15:47:09 robot_fun.py[line:177] INFO 交易币对: LTC_BTC  用户:robot14 挂【卖】单的价格:0.014497 挂【卖】单的数量:2.4 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:10 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014490,0.014508]
+Wed, 20 Jun 2018 15:47:10 robot_fun.py[line:111] INFO 交易币对: LTC_BTC  用户:robot13 挂【买】单的价格:0.014507 挂【买】单的数量:1.31 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:15 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014482,0.014505]
+Wed, 20 Jun 2018 15:47:15 robot_fun.py[line:177] INFO 交易币对: LTC_BTC  用户:robot14 挂【卖】单的价格:0.014494 挂【卖】单的数量:2.25 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:16 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014483,0.014509]
+Wed, 20 Jun 2018 15:47:16 robot_fun.py[line:111] INFO 交易币对: LTC_BTC  用户:robot13 挂【买】单的价格:0.014486 挂【买】单的数量:2.45 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:17 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014485,0.014509]
+Wed, 20 Jun 2018 15:47:17 robot_fun.py[line:177] INFO 交易币对: LTC_BTC  用户:robot14 挂【卖】单的价格:0.014494 挂【卖】单的数量:1.63 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:19 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014481,0.014508]
+Wed, 20 Jun 2018 15:47:19 robot_fun.py[line:111] INFO 交易币对: LTC_BTC  用户:robot13 挂【买】单的价格:0.014505 挂【买】单的数量:1.8 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:19 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014491,0.014499]
+Wed, 20 Jun 2018 15:47:19 robot_fun.py[line:177] INFO 交易币对: LTC_BTC  用户:robot14 挂【卖】单的价格:0.014497 挂【卖】单的数量:1.28 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:20 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014490,0.014502]
+Wed, 20 Jun 2018 15:47:21 robot_fun.py[line:111] INFO 交易币对: LTC_BTC  用户:robot13 挂【买】单的价格:0.014493 挂【买】单的数量:2.0 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:21 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014493,0.014504]
+Wed, 20 Jun 2018 15:47:21 robot_fun.py[line:177] INFO 交易币对: LTC_BTC  用户:robot14 挂【卖】单的价格:0.014496 挂【卖】单的数量:2.67 状态:AccessToken已过期
+Wed, 20 Jun 2018 15:47:23 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.014486,0.014505]
+Wed, 20 Jun 2018 15:47:23 robot_fun.py[line:111] INFO 交易币对: LTC_BTC  用户:robot13 挂【买】单的价格:0.014486 挂【买】单的数量:2.8 状态:AccessToken已过期

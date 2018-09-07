@@ -1,0 +1,21 @@
+#登录地址
+ loginUrl: 'http://dev.zetafin.cn:22005/auth/login/test'
+
+#挂单地址
+ orderUrl: 'http://dev.zetafin.cn:22004/ctc/order'
+
+#撤单地址
+ cancelOrderUrl: 'http://dev.zetafin.cn:22004/ctc/order/cancel/test'
+
+#获取最新交易价格{api}
+ #priceUrl: "https://www.bitstamp.net/api/v2/ticker/btcusd/"
+ priceUrl: 'https://www.bitstamp.net/api/ticker/'
+
+#用户账号密码
+ count:
+  tester01: 'tester01@lanlingdai.net'
+  tester02: 'tester02@lanlingdai.net'
+  tester03: 'tester03@lanlingdai.net'
+  tester04: 'tester04@lanlingdai.net'
+  xuxuan: 'xuxuan@lanlingdai.net'
+  password: '123456Aa'

@@ -1,0 +1,17 @@
+Tue, 19 Jun 2018 17:57:55 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Tue, 19 Jun 2018 17:57:55 robot_fun.py[line:34] INFO ********** 当前BTC/USDT市场交易价格为:【6715.82】**********
+Tue, 19 Jun 2018 17:57:55 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Tue, 19 Jun 2018 17:57:55 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6711.145255,6719.556837]
+Tue, 19 Jun 2018 17:57:55 robot_fun.py[line:112] INFO 交易币对: BTC_USDT  用户:tester01 挂【买】单的价格:6715.75 挂【买】单的数量:0.157283 状态:success
+Tue, 19 Jun 2018 17:57:57 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6710.204697,6720.499478]
+Tue, 19 Jun 2018 17:57:57 robot_fun.py[line:178] INFO 交易币对: BTC_USDT  用户:tester02 挂【卖】单的价格:6714.85 挂【卖】单的数量:0.391753 状态:success
+Tue, 19 Jun 2018 17:57:58 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6709.867353,6718.513078]
+Tue, 19 Jun 2018 17:57:58 robot_fun.py[line:112] INFO 交易币对: BTC_USDT  用户:tester01 挂【买】单的价格:6716.05 挂【买】单的数量:0.920373 状态:success
+Tue, 19 Jun 2018 17:58:02 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6709.761196,6718.352850]
+Tue, 19 Jun 2018 17:58:02 robot_fun.py[line:178] INFO 交易币对: BTC_USDT  用户:tester02 挂【卖】单的价格:6714.82 挂【卖】单的数量:0.893495 状态:success
+Tue, 19 Jun 2018 17:58:04 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6710.256149,6721.434883]
+Tue, 19 Jun 2018 17:58:04 robot_fun.py[line:112] INFO 交易币对: BTC_USDT  用户:tester01 挂【买】单的价格:6720.21 挂【买】单的数量:0.21856 状态:success
+Tue, 19 Jun 2018 17:58:08 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6712.963523,6719.152861]
+Tue, 19 Jun 2018 17:58:08 robot_fun.py[line:178] INFO 交易币对: BTC_USDT  用户:tester02 挂【卖】单的价格:6714.56 挂【卖】单的数量:0.95379 状态:success
+Tue, 19 Jun 2018 17:58:09 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6715.024442,6718.542804]
+Tue, 19 Jun 2018 17:58:09 robot_fun.py[line:112] INFO 交易币对: BTC_USDT  用户:tester01 挂【买】单的价格:6718.18 挂【买】单的数量:0.139253 状态:success

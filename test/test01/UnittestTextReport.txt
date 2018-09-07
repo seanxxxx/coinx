@@ -1,0 +1,39 @@
+test_add (untest01.TestMathFunc)
+Test method add(a, b) ... ok
+test_minus (untest01.TestMathFunc)
+Test method minus(a, b) ... ok
+test_divide (untest01.TestMathFunc)
+Test method divide(a, b) ... ok
+test_multi (untest01.TestMathFunc)
+Test method multi(a, b) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+test_add (untest01.TestMathFunc)
+Test method add(a, b) ... ok
+test_minus (untest01.TestMathFunc)
+Test method minus(a, b) ... ok
+test_divide (untest01.TestMathFunc)
+Test method divide(a, b) ... ok
+test_multi (untest01.TestMathFunc)
+Test method multi(a, b) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+test_add (untest01.TestMathFunc)
+Test method add(a, b) ... ok
+test_minus (untest01.TestMathFunc)
+Test method minus(a, b) ... ok
+test_divide (untest01.TestMathFunc)
+Test method divide(a, b) ... ok
+test_multi (untest01.TestMathFunc)
+Test method multi(a, b) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

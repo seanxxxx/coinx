@@ -1,0 +1,9 @@
+Wed, 20 Jun 2018 15:48:56 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:48:56 robot_fun.py[line:34] INFO ********** 当前XRP/BTC市场交易价格为:【7.98942e-05】**********
+Wed, 20 Jun 2018 15:48:56 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:48:56 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.000080,0.000080]
+Wed, 20 Jun 2018 15:48:56 robot_fun.py[line:111] INFO 交易币对: XRP_BTC  用户:robot19 挂【买】单的价格:7.991e-05 挂【买】单的数量:14.0 状态:success
+Wed, 20 Jun 2018 15:48:57 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.000080,0.000080]
+Wed, 20 Jun 2018 15:48:57 robot_fun.py[line:177] INFO 交易币对: XRP_BTC  用户:robot20 挂【卖】单的价格:7.988e-05 挂【卖】单的数量:36.0 状态:success
+Wed, 20 Jun 2018 15:48:58 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.000080,0.000080]
+Wed, 20 Jun 2018 15:48:58 robot_fun.py[line:111] INFO 交易币对: XRP_BTC  用户:robot19 挂【买】单的价格:7.992e-05 挂【买】单的数量:33.0 状态:success

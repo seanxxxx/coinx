@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数字货币交易订单提交</title>
+</head>
+<body>
+<h1 align="center">数字货币交易系统测试页面</h1>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<form action="/takeOrder/" method="post" class="form-horizontal" role="form">
+				<div class="form-group">
+					 <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail" name="inputEmail" />
+					</div>
+				</div>
+				<div class="form-group">
+					 <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="inputPassword" name="inputPassword" />
+					</div>
+				</div>
+                <div class="form-group">
+					 <label for="inputPassword3" class="col-sm-2 control-label">买/卖（B/S）</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputBS" name="inputBS" />
+					</div>
+				</div>
+                <div class="form-group">
+					 <label for="inputPassword3" class="col-sm-2 control-label">价格</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputPrice" name="inputPrice" />
+					</div>
+				</div>
+                <div class="form-group">
+					 <label for="inputPassword3" class="col-sm-2 control-label">数量</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputCount" name="inputCount" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						 <button type="submit" class="btn btn-default">提交订单</button>
+					</div>
+				</div>
+			</form>
+            <p color = "red">
+                {{msg}}
+            </p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<table class="table table-bordered table-condensed table-hover">
+				<thead>
+					<tr>
+						<th>
+							用户
+						</th>
+						<th>
+							买卖
+						</th>
+						<th>
+							价格
+						</th>
+						<th>
+							数量
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+                            {{ email }}
+						</td>
+						<td>
+                            {{ orderType }}
+						</td>
+						<td>
+                            {{ price }}
+						</td>
+						<td>
+                            {{ count }}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div>
+    <form action="/cancelOrder/" method="post">
+        <input name="email" type="text">用户名<br>
+        <input name="password" type="password">密码<br>
+        <input name="orderId" type="text">订单编号<br>
+        <input name="remark" type="text">备注<br>
+        <button id="btn" type="submit">撤单</button>
+    </form>
+                <p color = "red">
+                    {{cancelmsg}}
+                </p>
+</div>
+
+</body>
+</html>

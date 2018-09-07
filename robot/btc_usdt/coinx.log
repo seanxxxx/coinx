@@ -1,0 +1,120 @@
+Thu, 28 Jun 2018 13:11:27 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Thu, 28 Jun 2018 13:11:27 robot_fun.py[line:34] INFO ********** 当前LCK/USDT市场交易价格为:【6098.78】**********
+Thu, 28 Jun 2018 13:11:27 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Thu, 28 Jun 2018 13:11:27 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.426632,6100.021868]
+Thu, 28 Jun 2018 13:11:27 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.797651,6098.782956]
+Thu, 28 Jun 2018 13:11:27 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6098.36 挂【买】单的数量:0.050016 状态:success
+Thu, 28 Jun 2018 13:11:32 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.406546,6101.637239]
+Thu, 28 Jun 2018 13:11:32 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.761853,6101.039535]
+Thu, 28 Jun 2018 13:11:32 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6100.07 挂【卖】单的数量:1.200409 状态:success
+Thu, 28 Jun 2018 13:11:35 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.792416,6100.759380]
+Thu, 28 Jun 2018 13:11:35 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.104382,6102.239551]
+Thu, 28 Jun 2018 13:11:35 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6097.41 挂【买】单的数量:1.226689 状态:success
+Thu, 28 Jun 2018 13:11:37 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.614127,6101.473239]
+Thu, 28 Jun 2018 13:11:37 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.443491,6101.396140]
+Thu, 28 Jun 2018 13:11:37 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6097.45 挂【卖】单的数量:0.267516 状态:success
+Thu, 28 Jun 2018 13:11:38 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6098.108272,6100.479286]
+Thu, 28 Jun 2018 13:11:38 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.237162,6100.457271]
+Thu, 28 Jun 2018 13:11:38 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6097.27 挂【买】单的数量:0.45844 状态:success
+Thu, 28 Jun 2018 13:11:40 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.161969,6100.102600]
+Thu, 28 Jun 2018 13:11:40 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6092.321323,6098.903138]
+Thu, 28 Jun 2018 13:11:40 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6096.03 挂【卖】单的数量:0.162873 状态:success
+Thu, 28 Jun 2018 13:11:41 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.995121,6104.246186]
+Thu, 28 Jun 2018 13:11:41 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.294290,6098.542971]
+Thu, 28 Jun 2018 13:11:41 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6096.33 挂【买】单的数量:1.177599 状态:success
+Thu, 28 Jun 2018 13:11:42 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.496312,6103.061798]
+Thu, 28 Jun 2018 13:11:42 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.251360,6101.128805]
+Thu, 28 Jun 2018 13:11:42 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6100.34 挂【卖】单的数量:0.853665 状态:success
+Thu, 28 Jun 2018 13:11:43 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.866436,6102.692311]
+Thu, 28 Jun 2018 13:11:43 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.778559,6106.973496]
+Thu, 28 Jun 2018 13:11:43 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6100.52 挂【买】单的数量:0.682866 状态:success
+Thu, 28 Jun 2018 13:11:45 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.697902,6100.307338]
+Thu, 28 Jun 2018 13:11:45 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.470209,6098.601292]
+Thu, 28 Jun 2018 13:11:45 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6098.0 挂【卖】单的数量:0.43207 状态:success
+Thu, 28 Jun 2018 13:11:46 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.414477,6104.221396]
+Thu, 28 Jun 2018 13:11:46 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.600728,6103.952613]
+Thu, 28 Jun 2018 13:11:46 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6096.89 挂【买】单的数量:0.187237 状态:success
+Thu, 28 Jun 2018 13:11:47 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.454395,6102.701550]
+Thu, 28 Jun 2018 13:11:47 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.055021,6105.506916]
+Thu, 28 Jun 2018 13:11:48 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6099.91 挂【卖】单的数量:0.158234 状态:success
+Thu, 28 Jun 2018 13:11:52 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.860964,6102.621576]
+Thu, 28 Jun 2018 13:11:52 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.126141,6102.169182]
+Thu, 28 Jun 2018 13:11:52 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6097.68 挂【买】单的数量:1.01014 状态:success
+Thu, 28 Jun 2018 13:11:53 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.365402,6102.908772]
+Thu, 28 Jun 2018 13:11:53 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6092.459968,6099.823182]
+Thu, 28 Jun 2018 13:11:54 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6095.28 挂【卖】单的数量:0.088036 状态:success
+Thu, 28 Jun 2018 13:11:55 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.495113,6101.739138]
+Thu, 28 Jun 2018 13:11:55 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.253521,6103.026740]
+Thu, 28 Jun 2018 13:11:55 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6099.79 挂【买】单的数量:0.404105 状态:success
+Thu, 28 Jun 2018 13:11:56 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.582068,6099.712099]
+Thu, 28 Jun 2018 13:11:56 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6091.824296,6098.311881]
+Thu, 28 Jun 2018 13:11:56 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6095.5 挂【卖】单的数量:0.363102 状态:success
+Thu, 28 Jun 2018 13:12:00 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.302343,6103.006458]
+Thu, 28 Jun 2018 13:12:00 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.630260,6103.849105]
+Thu, 28 Jun 2018 13:12:00 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6101.08 挂【买】单的数量:0.878428 状态:success
+Thu, 28 Jun 2018 13:12:01 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.577120,6100.744577]
+Thu, 28 Jun 2018 13:12:01 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.253461,6099.340285]
+Thu, 28 Jun 2018 13:12:01 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6097.79 挂【卖】单的数量:0.904302 状态:success
+Thu, 28 Jun 2018 13:12:02 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.221504,6103.213341]
+Thu, 28 Jun 2018 13:12:02 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.340917,6097.967051]
+Thu, 28 Jun 2018 13:12:02 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6097.41 挂【买】单的数量:0.822401 状态:success
+Thu, 28 Jun 2018 13:12:04 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.596333,6102.324629]
+Thu, 28 Jun 2018 13:12:04 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6099.974818,6102.437443]
+Thu, 28 Jun 2018 13:12:04 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6100.08 挂【卖】单的数量:0.077003 状态:success
+Thu, 28 Jun 2018 13:12:07 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.911938,6102.377028]
+Thu, 28 Jun 2018 13:12:07 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.480292,6103.453306]
+Thu, 28 Jun 2018 13:12:07 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6096.64 挂【买】单的数量:0.911251 状态:success
+Thu, 28 Jun 2018 13:12:08 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.924355,6104.430786]
+Thu, 28 Jun 2018 13:12:08 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.138295,6103.960854]
+Thu, 28 Jun 2018 13:12:08 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6098.39 挂【卖】单的数量:1.048867 状态:success
+Thu, 28 Jun 2018 13:12:10 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.215585,6101.461100]
+Thu, 28 Jun 2018 13:12:10 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.313734,6102.288992]
+Thu, 28 Jun 2018 13:12:10 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6098.2 挂【买】单的数量:0.438728 状态:success
+Thu, 28 Jun 2018 13:12:11 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.915890,6102.963948]
+Thu, 28 Jun 2018 13:12:11 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.928386,6106.978851]
+Thu, 28 Jun 2018 13:12:12 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6101.98 挂【卖】单的数量:0.990204 状态:success
+Thu, 28 Jun 2018 13:12:12 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.262937,6104.503530]
+Thu, 28 Jun 2018 13:12:12 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6098.120758,6104.637013]
+Thu, 28 Jun 2018 13:12:12 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6102.48 挂【买】单的数量:0.470727 状态:success
+Thu, 28 Jun 2018 13:12:13 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6098.087756,6103.262509]
+Thu, 28 Jun 2018 13:12:13 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.072988,6104.337652]
+Thu, 28 Jun 2018 13:12:13 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6094.76 挂【卖】单的数量:0.288194 状态:success
+Thu, 28 Jun 2018 13:12:18 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.938491,6103.204164]
+Thu, 28 Jun 2018 13:12:18 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.511701,6107.317236]
+Thu, 28 Jun 2018 13:12:18 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6101.02 挂【买】单的数量:0.042147 状态:success
+Thu, 28 Jun 2018 13:12:19 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.255573,6102.080152]
+Thu, 28 Jun 2018 13:12:19 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6100.251122,6108.064951]
+Thu, 28 Jun 2018 13:12:19 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6107.21 挂【卖】单的数量:0.232725 状态:success
+Thu, 28 Jun 2018 13:12:19 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.667301,6103.252003]
+Thu, 28 Jun 2018 13:12:19 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.819477,6101.206561]
+Thu, 28 Jun 2018 13:12:19 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6096.81 挂【买】单的数量:0.959726 状态:success
+Thu, 28 Jun 2018 13:12:22 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.296067,6101.994681]
+Thu, 28 Jun 2018 13:12:22 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6095.345043,6101.396171]
+Thu, 28 Jun 2018 13:12:22 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6095.71 挂【卖】单的数量:0.76971 状态:success
+Thu, 28 Jun 2018 13:12:24 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.533395,6103.623035]
+Thu, 28 Jun 2018 13:12:24 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.626067,6100.709283]
+Thu, 28 Jun 2018 13:12:24 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6095.27 挂【买】单的数量:0.122121 状态:success
+Thu, 28 Jun 2018 13:12:25 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.174810,6101.699790]
+Thu, 28 Jun 2018 13:12:25 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6098.067822,6105.560186]
+Thu, 28 Jun 2018 13:12:26 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6104.12 挂【卖】单的数量:0.694182 状态:success
+Thu, 28 Jun 2018 13:12:26 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6098.036464,6104.668283]
+Thu, 28 Jun 2018 13:12:26 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6101.198465,6110.011938]
+Thu, 28 Jun 2018 13:12:26 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6108.77 挂【买】单的数量:0.711339 状态:success
+Thu, 28 Jun 2018 13:12:31 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.529088,6103.558018]
+Thu, 28 Jun 2018 13:12:31 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6094.198494,6098.372930]
+Thu, 28 Jun 2018 13:12:31 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6095.08 挂【卖】单的数量:0.606065 状态:success
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:34] INFO ********** 当前LCK/USDT市场交易价格为:【6099.71】**********
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6093.785652,6104.519251]
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6099.773764,6107.276279]
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6103.5 挂【买】单的数量:0.035513 状态:success
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.804986,6103.297672]
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.623699,6100.783368]
+Thu, 28 Jun 2018 13:12:34 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6097.83 挂【卖】单的数量:0.607193 状态:success
+Thu, 28 Jun 2018 13:12:35 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.956871,6103.810742]
+Thu, 28 Jun 2018 13:12:35 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6096.042741,6103.377036]
+Thu, 28 Jun 2018 13:12:35 robot_fun.py[line:112] INFO 交易币对: LCK_USDT  用户:robot25 挂【买】单的价格:6098.16 挂【买】单的数量:0.701349 状态:success
+Thu, 28 Jun 2018 13:12:39 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6097.708005,6101.696765]
+Thu, 28 Jun 2018 13:12:39 robot_fun.py[line:26] INFO 当前获取的价格区间是:[6098.808605,6101.549949]
+Thu, 28 Jun 2018 13:12:39 robot_fun.py[line:178] INFO 交易币对: LCK_USDT  用户:robot26 挂【卖】单的价格:6101.0 挂【卖】单的数量:0.193901 状态:success

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Documents/testDoc/robot/20180724/.idea/20180724.iml" filepath="$USER_HOME$/Documents/testDoc/robot/20180724/.idea/20180724.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BlockChain/.idea/BlockChain.iml" filepath="$PROJECT_DIR$/BlockChain/.idea/BlockChain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exchange/.idea/Exchange.iml" filepath="$PROJECT_DIR$/Exchange/.idea/Exchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/.idea/PycharmProjects.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/数字货币交易所测试文档/robot/20180724/btc_usdt/.idea/btc_usdt.iml" filepath="$USER_HOME$/Documents/数字货币交易所测试文档/robot/20180724/btc_usdt/.idea/btc_usdt.iml" />
+    </modules>
+  </component>
+</project>

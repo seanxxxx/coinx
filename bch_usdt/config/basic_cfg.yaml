@@ -1,0 +1,110 @@
+#登录地址
+ loginUrl: 'http://dev.zetafin.cn:22005/auth/login/test'
+
+#挂单地址
+ orderUrl: 'http://dev.zetafin.cn:22004/ctc/order'
+
+#撤单地址
+ cancelOrder: 'http://dev.zetafin.cn:22004/ctc/order/cancel'
+
+#获取最新交易价格{api}
+ #priceUrl: "https://www.bitstamp.net/api/v2/ticker/btcusd/"
+ btc_usdt_url: 'https://www.bitstamp.net/api/ticker/'
+ bitmart: 'https://api.bitmart.com/ticker/'
+ coinmarket: 'https://api.coinmarketcap.com/v2/ticker/'
+
+#用户账号密码
+ count:
+
+  tester01: 'robot07@lanlingdai.net'
+  password1: '123456Aa'
+
+  tester02: 'robot08@lanlingdai.net'
+  password2: '123456Aa'
+
+#交易对
+ tradePair:
+
+  usdt_btc_pairCode: 'btc_usdt'
+  btc_usdtMaxCount: 1.25
+
+  usdt_eth_pairCode: 'eth_usdt'
+  eth_usdtMaxCount: 0.05
+
+  usdt_xrp_pairCode: 'xrp_usdt'
+  xrp_usdtMaxCount: 3
+
+  usdt_bch_pairCode: 'bch_usdt'
+  bch_usdtMaxCount: 3
+
+  usdt_eos_pairCode: 'eos_usdt'
+  eos_usdtMaxCount: 3
+
+  usdt_ltc_pairCode: 'ltc_usdt'
+  ltc_usdtMaxCount: 3
+
+  usdt_ada_pairCode: 'ada_usdt'
+  ada_usdtMaxCount: 3
+
+  usdt_xlm_pairCode: 'xlm_usdt'
+  xlm_usdtMaxCount: 3
+
+  usdt_iota_pairCode: 'iota_usdt'
+  iota_usdtMaxCount: 3
+
+  btc_eth_pairCode: 'eth_btc'
+  eth_btcMaxCount: 3
+
+  btc_xrp_pairCode: 'xrp_btc'
+  xrp_btcMaxCount: 50
+
+  btc_bch_pairCode: 'bch_btc'
+  bch_btcMaxCount: 3
+
+  btc_eos_pairCode: 'eos_btc'
+  eos_btcMaxCount: 3
+
+  btc_ltc_pairCode: 'ltc_btc'
+  ltc_btcMaxCount: 3
+
+  btc_ada_pairCode: 'ada_btc'
+  ada_btcMaxCount: 30
+
+  btc_xlm_pairCode: 'xlm_btc'
+  xlm_btcMaxCount: 30
+
+  btc_iota_pairCode: 'iota_btc'
+  iota_btcMaxCount: 3
+
+  eth_xrp_pairCode: 'xrp_eth'
+  xrp_ethMaxCount: 3
+
+  eth_eos_pairCode: 'eos_eth'
+  eos_ethMaxCount: 3
+
+  eth_ltc_pairCode: 'ltc_eth'
+  ltc_ethMaxCount: 3
+
+  eth_ada_pairCode: 'ada_eth'
+  ada_ethMaxCount: 3
+
+  eth_xlm_pairCode: 'xlm_eth'
+  xlm_ethMaxCount: 3
+
+  eth_iota_pairCode: 'iota_eth'
+  iota_ethMaxCount: 3
+
+#货币对应id
+ btc: 1
+ eth: 1027
+ xrp: 52
+ bch: 1831
+ eos: 1765
+ ltc: 2
+ ada: 2010
+ xlm: 512
+ iota: 1720
+
+
+
+

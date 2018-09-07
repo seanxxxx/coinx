@@ -1,0 +1,7 @@
+Wed, 20 Jun 2018 15:47:52 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:47:52 robot_fun.py[line:34] INFO ********** 当前LTC/ETH市场交易价格为:【0.1837150137】**********
+Wed, 20 Jun 2018 15:47:52 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:47:52 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.18355,0.18381]
+Wed, 20 Jun 2018 15:47:52 robot_fun.py[line:111] INFO 交易币对: LTC_ETH  用户:robot15 挂【买】单的价格:0.18367 挂【买】单的数量:2.765 状态:success
+Wed, 20 Jun 2018 15:47:55 robot_fun.py[line:26] INFO 当前获取的价格区间是:[0.18364,0.18377]
+Wed, 20 Jun 2018 15:47:55 robot_fun.py[line:177] INFO 交易币对: LTC_ETH  用户:robot16 挂【卖】单的价格:0.18376 挂【卖】单的数量:1.676 状态:AccessToken已过期

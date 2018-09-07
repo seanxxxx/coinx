@@ -1,0 +1,7 @@
+Wed, 20 Jun 2018 15:48:25 robot_fun.py[line:33] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:48:25 robot_fun.py[line:34] INFO ********** 当前ltc/USDT市场交易价格为:【96.4387716618】**********
+Wed, 20 Jun 2018 15:48:25 robot_fun.py[line:35] INFO ----------------------------------------------------------------
+Wed, 20 Jun 2018 15:48:25 robot_fun.py[line:26] INFO 当前获取的价格区间是:[96.347397,96.488992]
+Wed, 20 Jun 2018 15:48:26 robot_fun.py[line:111] INFO 交易币对: LTC_USDT  用户:robot17 挂【买】单的价格:96.48 挂【买】单的数量:2.11493 状态:success
+Wed, 20 Jun 2018 15:48:30 robot_fun.py[line:26] INFO 当前获取的价格区间是:[96.370635,96.474211]
+Wed, 20 Jun 2018 15:48:30 robot_fun.py[line:177] INFO 交易币对: LTC_USDT  用户:robot18 挂【卖】单的价格:96.41 挂【卖】单的数量:0.19826 状态:AccessToken已过期

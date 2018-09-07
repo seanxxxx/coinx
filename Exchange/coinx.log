@@ -1,0 +1,48 @@
+Sat, 30 Jun 2018 07:46:48 exception.py[line:118] ERROR Internal Server Error: /takeOrder/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xuanxu/PycharmProjects/Exchange/monitor/views.py", line 109, in takeOrder
+    token = robot_fun.get_access_token(loginUrl, email, password)
+  File "/Users/xuanxu/PycharmProjects/Exchange/public/robot_fun.py", line 84, in get_access_token
+    access_token = login_request.json()['data']['access_token']
+TypeError: 'NoneType' object is not subscriptable
+Sat, 30 Jun 2018 07:47:54 exception.py[line:118] ERROR Internal Server Error: /index
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xuanxu/PycharmProjects/Exchange/monitor/views.py", line 61, in index
+    return render(request,'index.html',{'a1':round(a1[0][0],6),
+TypeError: type NoneType doesn't define __round__ method
+Sat, 30 Jun 2018 07:47:57 exception.py[line:118] ERROR Internal Server Error: /index
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xuanxu/PycharmProjects/Exchange/monitor/views.py", line 61, in index
+    return render(request,'index.html',{'a1':round(a1[0][0],6),
+TypeError: type NoneType doesn't define __round__ method
+Sat, 30 Jun 2018 07:49:31 exception.py[line:118] ERROR Internal Server Error: /takeOrder/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xuanxu/PycharmProjects/Exchange/monitor/views.py", line 109, in takeOrder
+    token = robot_fun.get_access_token(loginUrl, email, password)
+  File "/Users/xuanxu/PycharmProjects/Exchange/public/robot_fun.py", line 84, in get_access_token
+    access_token = login_request.json()['data']['access_token']
+TypeError: 'NoneType' object is not subscriptable

@@ -1,0 +1,64 @@
+ host: "10.0.0.9"
+ user: "coinx-rw"
+ pwd: "c01nx@123"
+ db: "coinx"
+ port: 3306
+ charset: 'utf8'
+
+ localhost: "127.0.0.1"
+ localuser: "root"
+ localpwd: "123456"
+ localdb: "tt"
+ port: 3306
+ charset: 'utf8'
+
+ testhost: "10.0.0.9"
+ testuser: "test-coinx-rw"
+ testpwd: "123456"
+ testdb: "coin"
+ port: 3306
+ charset: 'utf8'
+
+#查询数据库配置的交易对
+
+#BTC_USDT
+ btc_usdt:
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BTC_USDT' AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BTC_USDT' AND bid_customer_id = (select id from customer where email = 'robot07@lanlingdai.net') AND ask_customer_id = (select id from customer where email = 'robot08@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BTC_USDT' AND bid_customer_id != (select id from customer where email = 'robot07@lanlingdai.net') or ask_customer_id != (select id from customer where email = 'robot08@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BTC_USDT' AND bid_customer_id != (select id from customer where email = 'robot07@lanlingdai.net') AND ask_customer_id != (select id from customer where email = 'robot08@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+ eth_usdt:
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'ETH_USDT' AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'ETH_USDT' AND bid_customer_id = (select id from customer where email = 'robot11@lanlingdai.net') AND ask_customer_id = (select id from customer where email = 'robot12@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'ETH_USDT' AND bid_customer_id != (select id from customer where email = 'robot11@lanlingdai.net') or ask_customer_id != (select id from customer where email = 'robot12@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'ETH_USDT' AND bid_customer_id != (select id from customer where email = 'robot11@lanlingdai.net') AND ask_customer_id != (select id from customer where email = 'robot12@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+ bch_usdt:
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BCH_USDT' AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BCH_USDT' AND bid_customer_id = (select id from customer where email = 'robot05@lanlingdai.net') AND ask_customer_id = (select id from customer where email = 'robot06@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BCH_USDT' AND bid_customer_id != (select id from customer where email = 'robot05@lanlingdai.net') or ask_customer_id != (select id from customer where email = 'robot06@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BCH_USDT' AND bid_customer_id != (select id from customer where email = 'robot05@lanlingdai.net') AND ask_customer_id != (select id from customer where email = 'robot06@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+ ltc_usdt:
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_USDT' AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_USDT' AND bid_customer_id = (select id from customer where email = 'robot17@lanlingdai.net') AND ask_customer_id = (select id from customer where email = 'robot18@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_USDT' AND bid_customer_id != (select id from customer where email = 'robot17@lanlingdai.net') or ask_customer_id != (select id from customer where email = 'robot18@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_USDT' AND bid_customer_id != (select id from customer where email = 'robot17@lanlingdai.net') AND ask_customer_id != (select id from customer where email = 'robot18@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+ eth_btc:
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'ETH_BTC' AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'ETH_BTC' AND bid_customer_id = (select id from customer where email = 'robot09@lanlingdai.net') AND ask_customer_id = (select id from customer where email = 'robot10@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'ETH_BTC' AND bid_customer_id != (select id from customer where email = 'robot09@lanlingdai.net') or ask_customer_id != (select id from customer where email = 'robot10@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'ETH_BTC' AND bid_customer_id != (select id from customer where email = 'robot09@lanlingdai.net') AND ask_customer_id != (select id from customer where email = 'robot10@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+ bch_btc:
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BCH_BTC' AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BCH_BTC' AND bid_customer_id = (select id from customer where email = 'robot01@lanlingdai.net') AND ask_customer_id = (select id from customer where email = 'robot02@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BCH_BTC' AND bid_customer_id != (select id from customer where email = 'robot01@lanlingdai.net') or ask_customer_id != (select id from customer where email = 'robot02@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'BCH_BTC' AND bid_customer_id != (select id from customer where email = 'robot01@lanlingdai.net') AND ask_customer_id != (select id from customer where email = 'robot02@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+ ltc_btc:
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_BTC' AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_BTC' AND bid_customer_id = (select id from customer where email = 'robot13@lanlingdai.net') AND ask_customer_id = (select id from customer where email = 'robot14@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_BTC' AND bid_customer_id != (select id from customer where email = 'robot13@lanlingdai.net') or ask_customer_id != (select id from customer where email = 'robot14@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_BTC' AND bid_customer_id != (select id from customer where email = 'robot13@lanlingdai.net') AND ask_customer_id != (select id from customer where email = 'robot14@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+ ltc_eth:
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_ETH' AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_ETH' AND bid_customer_id = (select id from customer where email = 'robot15@lanlingdai.net') AND ask_customer_id = (select id from customer where email = 'robot16@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_ETH' AND bid_customer_id != (select id from customer where email = 'robot15@lanlingdai.net') or ask_customer_id != (select id from customer where email = 'robot16@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"
+  - "select sum(deal_count) as dealCount from trade where trade_pair_code = 'LTC_ETH' AND bid_customer_id != (select id from customer where email = 'robot15@lanlingdai.net') AND ask_customer_id != (select id from customer where email = 'robot16@lanlingdai.net') AND created_at >= (now() - interval 24 hour) AND created_at < now();"

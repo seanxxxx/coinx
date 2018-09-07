@@ -1,0 +1,29 @@
+ host: "10.0.0.9"
+ user: "coinx-rw"
+ pwd: "c01nx@123"
+ db: "coinx"
+ port: 3306
+ charset: 'utf8'
+
+#设置数据库更新等级
+ setDB: "set sql_safe_updates=0"
+
+#重置测试账户数据
+ resetCount:
+  - "update trade_account set available_balance = '100' where coin_symbol = 'BTC' and customer_id in (5,6)"
+  - "update trade_account set available_balance = '1000000' where coin_symbol = 'USDT' and customer_id in (5,6)"
+  - "update trade_account set reserved_balance = '0' where customer_id in (5,6)"
+
+ search_tester01_BTC&USDT:
+  - "select available_balance,reserved_balance from trade_account WHERE customer_id = 5 and coin_symbol = 'BTC'"
+  - "select available_balance,reserved_balance from trade_account WHERE customer_id = 5 and coin_symbol = 'USDT'"
+
+ search_tester02_BTC&USDT:
+  - "select available_balance,reserved_balance from trade_account WHERE customer_id = 6 and coin_symbol = 'BTC'"
+  - "select available_balance,reserved_balance from trade_account WHERE customer_id = 6 and coin_symbol = 'USDT'"
+
+ cancel_order:
+  - "update trade_order set status = '9000' where customer_id in (5,6)"
+
+ get_rate:
+  - "select maker_rate,taker_rate from trade_pair where code = 'BTC_USDT'"

@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>数字货币交易系统测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.9.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+    <!-- <script type="text/javascript" src="js/echarts.common.min.js"></script> -->
+
+    
+<style type="text/css" media="screen">
+    body        { font-family: Microsoft YaHei,Consolas,arial,sans-serif; font-size: 80%; }
+    table       { font-size: 100%; }
+    pre         { white-space: pre-wrap;word-wrap: break-word; }
+    /* -- heading ---------------------------------------------------------------------- */
+    h1 {
+        font-size: 16pt;
+        color: gray;
+    }
+    .heading {
+        margin-top: 0ex;
+        margin-bottom: 1ex;
+    }
+    .heading .attribute {
+        margin-top: 1ex;
+        margin-bottom: 0;
+    }
+    .heading .description {
+        margin-top: 2ex;
+        margin-bottom: 3ex;
+    }
+    /* -- css div popup ------------------------------------------------------------------------ */
+    a.popup_link {
+    }
+    a.popup_link:hover {
+        color: red;
+    }
+    .popup_window {
+        display: none;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /*border: solid #627173 1px; */
+        padding: 10px;
+        /*background-color: #E6E6D6; */
+        font-family: "Lucida Console", "Courier New", Courier, monospace;
+        text-align: left;
+        font-size: 8pt;
+        /* width: 500px;*/
+    }
+    }
+    /* -- report ------------------------------------------------------------------------ */
+    #show_detail_line {
+        margin-top: 3ex;
+        margin-bottom: 1ex;
+    }
+    #result_table {
+        width: 99%;
+    }
+    #header_row {
+        font-weight: bold;
+        color: #303641;
+        background-color: #ebebeb;
+    }
+    #total_row  { font-weight: bold; }
+    .passClass  { background-color: #bdedbc; }
+    .failClass  { background-color: #ffefa4; }
+    .errorClass { background-color: #ffc9c9; }
+    .passCase   { color: #6c6; }
+    .failCase   { color: #FF6600; font-weight: bold; }
+    .errorCase  { color: #c00; font-weight: bold; }
+    .hiddenRow  { display: none; }
+    .testcase   { margin-left: 2em; }
+    /* -- ending ---------------------------------------------------------------------- */
+    #ending {
+    }
+    #div_base {
+                position:absolute;
+                top:0%;
+                left:5%;
+                right:5%;
+                width: auto;
+                height: auto;
+                margin: -15px 0 0 0;
+    }
+</style>
+
+
+</head>
+<body>
+    <script language="javascript" type="text/javascript"><!--
+    output_list = Array();
+    /* level - 0:Summary; 1:Failed; 2:All */
+    function showCase(level) {
+        trs = document.getElementsByTagName("tr");
+        for (var i = 0; i < trs.length; i++) {
+            tr = trs[i];
+            id = tr.id;
+            if (id.substr(0,2) == 'ft') {
+                if (level < 1) {
+                    tr.className = 'hiddenRow';
+                }
+                else {
+                    tr.className = '';
+                }
+            }
+            if (id.substr(0,2) == 'pt') {
+                if (level > 1) {
+                    tr.className = '';
+                }
+                else {
+                    tr.className = 'hiddenRow';
+                }
+            }
+        }
+    }
+    function showClassDetail(cid, count) {
+        var id_list = Array(count);
+        var toHide = 1;
+        for (var i = 0; i < count; i++) {
+            tid0 = 't' + cid.substr(1) + '.' + (i+1);
+            tid = 'f' + tid0;
+            tr = document.getElementById(tid);
+            if (!tr) {
+                tid = 'p' + tid0;
+                tr = document.getElementById(tid);
+            }
+            id_list[i] = tid;
+            if (tr.className) {
+                toHide = 0;
+            }
+        }
+        for (var i = 0; i < count; i++) {
+            tid = id_list[i];
+            if (toHide) {
+                document.getElementById('div_'+tid).style.display = 'none'
+                document.getElementById(tid).className = 'hiddenRow';
+            }
+            else {
+                document.getElementById(tid).className = '';
+            }
+        }
+    }
+    function showTestDetail(div_id){
+        var details_div = document.getElementById(div_id)
+        var displayState = details_div.style.display
+        // alert(displayState)
+        if (displayState != 'block' ) {
+            displayState = 'block'
+            details_div.style.display = 'block'
+        }
+        else {
+            details_div.style.display = 'none'
+        }
+    }
+    function html_escape(s) {
+        s = s.replace(/&/g,'&amp;');
+        s = s.replace(/</g,'&lt;');
+        s = s.replace(/>/g,'&gt;');
+        return s;
+    }
+    /* obsoleted by detail in <div>
+    function showOutput(id, name) {
+        var w = window.open("", //url
+                        name,
+                        "resizable,scrollbars,status,width=800,height=450");
+        d = w.document;
+        d.write("<pre>");
+        d.write(html_escape(output_list[id]));
+        d.write("\n");
+        d.write("<a href='javascript:window.close()'>close</a>\n");
+        d.write("</pre>\n");
+        d.close();
+    }
+    */
+    --></script>
+    <div id="div_base">
+        
+    <div class='page-header'>
+        <h1>数字货币交易系统测试报告</h1>
+    <p class='attribute'><strong>开始时间:</strong> 2018-06-06 16:20:44</p>
+<p class='attribute'><strong>运行时长:</strong> 0:01:48.157677</p>
+<p class='attribute'><strong>状态:</strong> 通过 20</p>
+
+    </div>
+    <div style="float: left;width:50%;"><p class='description'>该报告使用HTMLTestRunner输出</p></div>
+    <div id="chart" style="width:50%;height:400px;float:left;"></div>
+
+        
+    <div class="btn-group btn-group-sm">
+        <button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button>
+        <button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>
+        <button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>
+    </div>
+    <p></p>
+    <table id='result_table' class="table table-bordered">
+        <colgroup>
+            <col align='left' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+        </colgroup>
+        <tr id='header_row'>
+            <td>测试套件/测试用例</td>
+            <td>总数</td>
+            <td>通过</td>
+            <td>失败</td>
+            <td>错误</td>
+            <td>查看</td>
+        </tr>
+        
+    <tr class='passClass'>
+        <td>CTCIT.do_test.ask_bid_order.TestAskBidOrder: 用户挂单测试</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c1',4)">详情</a></td>
+    </tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>askOrder: tester01挂卖单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a>
+    <div id='div_pt1.1' class="popup_window">
+        <pre>pt1.1: &lt;Response [200]&gt;
+订单id：536803200002
+订单price：7097.070000
+订单数量：4.760000
+
+
+测试用例说明:
+1.用户申报一个Ask单
+2.验证BTC可用余额
+3.验证BTC冻结金额
+4.验证挂单请求返回的msg
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>bidOrder: tester02挂买单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        通过</a>
+    <div id='div_pt1.2' class="popup_window">
+        <pre>pt1.2: 订单id：546803200002
+订单price：7006.590000
+订单数量：0.579000
+
+
+测试用例说明:
+1.用户申报一个Bid单
+2.验证BTC可用余额
+3.验证BTC冻结金额
+4.验证挂单请求返回的msg
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>askBatchOrder: tester01批量挂卖单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        通过</a>
+    <div id='div_pt1.3' class="popup_window">
+        <pre>pt1.3: 订单id：556803200002
+订单price：7099.520000
+订单数量：3.798000
+订单id：566803200002
+订单price：6933.120000
+订单数量：4.959000
+订单id：576803200002
+订单price：6915.120000
+订单数量：1.509000
+订单id：586803200002
+订单price：7009.750000
+订单数量：3.237000
+订单id：596803200002
+订单price：6927.840000
+订单数量：3.314000
+订单id：507803200002
+订单price：7030.080000
+订单数量：1.188000
+订单id：517803200002
+订单price：6904.870000
+订单数量：1.683000
+订单id：527803200002
+订单price：7010.760000
+订单数量：2.481000
+订单id：537803200002
+订单price：7001.630000
+订单数量：1.447000
+订单id：547803200002
+订单price：7078.280000
+订单数量：3.447000
+
+
+测试用例说明:
+1.用户申报10个Ask单
+2.验证BTC可用余额
+3.验证BTC冻结金额
+4.验证挂单请求返回的msg
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>bidBatchOrder: tester02批量挂买单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        通过</a>
+    <div id='div_pt1.4' class="popup_window">
+        <pre>pt1.4: 订单id：557803200002
+订单price：7044.450000
+订单数量：1.803000
+订单id：567803200002
+订单price：7072.140000
+订单数量：4.948000
+订单id：577803200002
+订单price：6967.100000
+订单数量：0.174000
+订单id：587803200002
+订单price：7061.440000
+订单数量：4.634000
+订单id：597803200002
+订单price：6949.950000
+订单数量：3.288000
+订单id：508803200002
+订单price：7035.020000
+订单数量：3.401000
+订单id：518803200002
+订单price：6974.550000
+订单数量：3.053000
+订单id：528803200002
+订单price：7047.040000
+订单数量：3.397000
+订单id：538803200002
+订单price：6942.530000
+订单数量：2.059000
+订单id：548803200002
+订单price：7039.620000
+订单数量：3.337000
+
+
+测试用例说明:
+1.用户申报10个Bid单
+2.验证BTC可用余额
+3.验证BTC冻结金额
+4.验证挂单请求返回的msg
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.cancel_order.TestCancelOrder: 用户撤单测试</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c2',2)">详情</a></td>
+    </tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>cancelAskOrder: 撤销tester01卖单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        通过</a>
+    <div id='div_pt2.1' class="popup_window">
+        <pre>pt2.1: 订单id：230885
+订单price：7026.210000
+订单数量：2.492000
+
+
+测试用例说明:
+1.用户1申报1个Ask单
+2.用户1撤单
+3.验证订单状态和返回的msg
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>cancelBidOrder: 撤销tester02买单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        通过</a>
+    <div id='div_pt2.2' class="popup_window">
+        <pre>pt2.2: 订单id：230886
+订单price：7048.380000
+订单数量：0.180000
+
+
+测试用例说明:
+1.用户2申报1个bid单
+2.用户2撤单
+3.验证订单状态和返回的msg
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.ask_eat_part.TestAskEatBidTrade: 模拟深度->挂Ask->吃Bid（Bid一价部分交易）测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c3',1)">详情</a></td>
+    </tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>takePart: tester01申报ask，吃掉test02申报的bid一价一部分</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        通过</a>
+    <div id='div_pt3.1' class="popup_window">
+        <pre>pt3.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7082.020000***|***2.710000***|
+    |***7074.520000***|***1.289000***|
+ASK |***7074.470000***|***2.633000***|
+    |***7053.520000***|***2.417000***|
+    |***7036.050000***|***0.941000***|
+———————————————————————————————————————
+    |***6986.380000***|***2.530000***|
+    |***6980.760000***|***0.487000***|
+BID |***6957.030000***|***2.515000***|
+    |***6915.160000***|***2.296000***|
+    |***6912.280000***|***0.682000***|
+--------------------------------------
+--------------------------------------
+
+
+Ask申报 价格:6941.980000 数量:2.463000
+
+
+交易总价: 17098.09674
+
+
+tester01可用btc: 87.547
+tester01冻结btc: 9.99
+tester01可用usdt: 1017063.90054652
+tester02可用btc: 102.460537
+tester02可用usdt: 940945.87291
+tester02冻结usdt: 41956.03035
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户1挂一个ask（价格小于bid一价，数量小于bid一价数量），吃掉部分bid一价
+3.验证第二次挂ask的订单状态
+4.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.ask_eat_all.TestAskEatBidAllTrade: 模拟深度->挂Ask->吃Bid（Bid一价全部交易）测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c4',1)">详情</a></td>
+    </tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>takeAll: tester01申报ask，吃掉test02申报的全部bid一价</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.1')" >
+        通过</a>
+    <div id='div_pt4.1' class="popup_window">
+        <pre>pt4.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7060.250000***|***2.636000***|
+    |***7058.800000***|***1.297000***|
+ASK |***7056.330000***|***2.277000***|
+    |***7040.580000***|***4.441000***|
+    |***7004.500000***|***3.798000***|
+———————————————————————————————————————
+    |***6991.080000***|***1.500000***|
+    |***6962.430000***|***3.453000***|
+BID |***6951.910000***|***3.926000***|
+    |***6930.120000***|***2.520000***|
+    |***6910.530000***|***3.446000***|
+--------------------------------------
+--------------------------------------
+
+
+Ask申报 价格:6955.420000 数量:1.500000
+
+
+交易总价: 10433.13
+
+
+tester01可用btc: 84.051
+tester01冻结btc: 14.449
+tester01可用usdt: 1010412.26374
+tester02可用btc: 101.4985
+tester02可用usdt: 896954.81177
+tester02冻结usdt: 92612.05823
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户1挂一个ask（价格小于bid一价，数量等于bid一价数量），吃掉全部bid一价
+3.验证第二次挂ask的订单状态
+4.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.ask_eat_allpart.TestAskEatBidAllPartTrade: 模拟深度->挂Ask->吃Bid（Bid一价全部交易，Bid二价部分交易）测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c5',1)">详情</a></td>
+    </tr>
+
+<tr id='pt5.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>takeAllPart: tester01申报ask，吃掉test02申报的bid一价全部，二价部分</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.1')" >
+        通过</a>
+    <div id='div_pt5.1' class="popup_window">
+        <pre>pt5.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7085.210000***|***4.260000***|
+    |***7076.770000***|***2.668000***|
+ASK |***7076.620000***|***3.296000***|
+    |***7036.120000***|***2.670000***|
+    |***7024.310000***|***3.982000***|
+———————————————————————————————————————
+    |***6964.420000***|***0.061000***|
+    |***6960.470000***|***0.046000***|
+BID |***6939.250000***|***4.775000***|
+    |***6923.280000***|***1.355000***|
+    |***6914.090000***|***0.218000***|
+--------------------------------------
+--------------------------------------
+
+
+Ask申报 价格:6906.400000 数量:0.062000
+
+
+交易总价: 428.1968
+
+
+tester01可用btc: 83.062
+tester01冻结btc: 16.876
+tester01可用usdt: 1000427.3404064
+tester02可用btc: 100.061938
+tester02可用usdt: 955235.34728
+tester02冻结usdt: 44336.45592
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户1挂一个ask（价格小于bid二价，数量大于bid一价，小于bid一价和bid二价数量和），吃掉全部bid一价，部分bid二价
+3.验证第二次挂ask的订单状态
+4.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.ask_eat_upwall.TestAskEatupWallTrade: 模拟深度->挂Ask->吃Bid（Bid一价全部交易）->剩余Ask上架测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c6',1)">详情</a></td>
+    </tr>
+
+<tr id='pt6.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>takeAllupWall: tester01申报ask，吃掉test02申报的全部bid一价，剩余部分进入深度图</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.1')" >
+        通过</a>
+    <div id='div_pt6.1' class="popup_window">
+        <pre>pt6.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7083.380000***|***2.616000***|
+    |***7054.920000***|***4.292000***|
+ASK |***7043.940000***|***4.099000***|
+    |***7038.210000***|***4.823000***|
+    |***7038.030000***|***1.928000***|
+———————————————————————————————————————
+    |***6981.740000***|***0.631000***|
+    |***6980.200000***|***2.042000***|
+BID |***6953.260000***|***0.912000***|
+    |***6936.240000***|***2.576000***|
+    |***6928.130000***|***3.404000***|
+--------------------------------------
+--------------------------------------
+
+
+Ask申报 价格:6980.430000 数量:3.222000
+
+
+交易总价: 4404.65133
+
+
+tester01可用btc: 79.02
+tester01冻结btc: 20.349
+tester01可用usdt: 1004395.84202734
+tester02可用btc: 100.630369
+tester02可用usdt: 933549.29839
+tester02冻结usdt: 62046.05028
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户1挂一个ask（价格小于bid一价，大于bid二价，数量大于bid一价数量），吃掉全部bid一价，剩余部分上架
+3.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.bid_eat_part.TestBidEatAskTrade: 模拟深度->挂Bid->吃Ask（Bid一价部分交易）测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c7',1)">详情</a></td>
+    </tr>
+
+<tr id='pt7.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>takePart: tester02申报bid，吃掉test01申报的ask一价一部分</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.1')" >
+        通过</a>
+    <div id='div_pt7.1' class="popup_window">
+        <pre>pt7.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7095.800000***|***0.590000***|
+    |***7042.320000***|***0.598000***|
+ASK |***7038.520000***|***2.162000***|
+    |***7033.360000***|***3.537000***|
+    |***7031.750000***|***3.915000***|
+———————————————————————————————————————
+    |***6975.080000***|***3.998000***|
+    |***6956.460000***|***0.769000***|
+BID |***6955.890000***|***2.133000***|
+    |***6951.890000***|***4.446000***|
+    |***6917.170000***|***3.680000***|
+--------------------------------------
+--------------------------------------
+
+
+Bid申报 价格:7037.800000 数量:1.433000
+
+
+交易总价: 10076.49775
+
+
+tester01可用btc: 89.198
+tester01冻结btc: 9.369
+tester01可用usdt: 1010066.42125225
+tester02可用btc: 101.430134
+tester02可用usdt: 885487.41276
+tester02冻结usdt: 104436.08949
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户2挂一个bid（价格大于ask一价，数量小于ask一价数量），吃掉部分ask一价
+3.验证第二次挂bid的订单状态
+4.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.bid_eat_all.TestBidEatAskAllTrade: 模拟深度->挂Bid->吃Ask（Ask一价全部交易）测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c8',1)">详情</a></td>
+    </tr>
+
+<tr id='pt8.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>takeAll: tester02申报bid，吃掉test01申报的全部ask一价</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.1')" >
+        通过</a>
+    <div id='div_pt8.1' class="popup_window">
+        <pre>pt8.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7094.190000***|***4.169000***|
+    |***7065.260000***|***3.015000***|
+ASK |***7061.440000***|***2.188000***|
+    |***7029.670000***|***2.987000***|
+    |***7017.340000***|***0.236000***|
+———————————————————————————————————————
+    |***6989.810000***|***3.697000***|
+    |***6971.210000***|***1.851000***|
+BID |***6965.360000***|***4.517000***|
+    |***6915.090000***|***3.551000***|
+    |***6910.130000***|***2.221000***|
+--------------------------------------
+--------------------------------------
+
+
+Bid申报 价格:7045.610000 数量:0.236000
+
+
+交易总价: 1656.09224
+
+
+tester01可用btc: 87.405
+tester01冻结btc: 12.359
+tester01可用usdt: 1001654.43614776
+tester02可用btc: 100.235528
+tester02可用usdt: 888233.45604
+tester02冻结usdt: 110110.45172
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户2挂一个bid（价格大于ask一价，数量等于ask一价数量），吃掉全部ask一价
+3.验证第二次挂bid的订单状态
+4.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.bid_eat_allpart.TestBidEatAskAllPartTrade: 模拟深度->挂Bid->吃Ask（Ask一价全部交易，Ask二价部分交易）测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c9',1)">详情</a></td>
+    </tr>
+
+<tr id='pt9.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>takeAllPart: tester02申报bid，吃掉test01申报的全部ask一价</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt9.1')" >
+        通过</a>
+    <div id='div_pt9.1' class="popup_window">
+        <pre>pt9.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7094.090000***|***3.166000***|
+    |***7085.260000***|***3.430000***|
+ASK |***7066.930000***|***2.209000***|
+    |***7044.320000***|***1.358000***|
+    |***7034.980000***|***4.587000***|
+———————————————————————————————————————
+    |***6987.830000***|***1.548000***|
+    |***6986.090000***|***2.996000***|
+BID |***6938.170000***|***2.635000***|
+    |***6930.700000***|***4.315000***|
+    |***6923.550000***|***0.494000***|
+--------------------------------------
+--------------------------------------
+
+
+Bid申报 价格:7063.910000 数量:5.843000
+
+
+交易总价: 41117.11918
+
+
+tester01可用btc: 85.25
+tester01冻结btc: 8.907
+tester01可用usdt: 1041076.00206082
+tester02可用btc: 105.831314
+tester02可用usdt: 875527.11219
+tester02冻结usdt: 83355.76863
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户2挂一个bid（价格大于ask二价，数量大于ask一价，小于ask一价和ask二价数量和），吃掉全部ask一价，部分ask二价
+3.验证第二次挂bid的订单状态
+4.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.bid_eat_upwall.TestBidEatupWallTrade: 模拟深度->挂Bid->吃Ask（Ask一价全部交易）->剩余Bid上架测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c10',1)">详情</a></td>
+    </tr>
+
+<tr id='pt10.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>takeAllupWall: tester02申报bid，吃掉test01申报的全部ask一价，剩余部分进入深度图</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt10.1')" >
+        通过</a>
+    <div id='div_pt10.1' class="popup_window">
+        <pre>pt10.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7094.970000***|***3.506000***|
+    |***7087.780000***|***4.798000***|
+ASK |***7075.120000***|***1.078000***|
+    |***7075.110000***|***3.943000***|
+    |***7044.590000***|***4.161000***|
+———————————————————————————————————————
+    |***6991.320000***|***1.173000***|
+    |***6955.210000***|***3.347000***|
+BID |***6950.780000***|***1.289000***|
+    |***6919.360000***|***4.951000***|
+    |***6912.630000***|***2.812000***|
+--------------------------------------
+--------------------------------------
+
+
+Bid申报 价格:7071.840000 数量:4.789000
+
+
+交易总价: 29312.53899
+
+
+tester01可用btc: 82.514
+tester01冻结btc: 13.325
+tester01可用usdt: 1029283.22645101
+tester02可用btc: 104.152678
+tester02可用usdt: 872110.81692
+tester02冻结usdt: 98576.64409
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户2挂一个bid（价格大于ask一价，小于ask二价，数量大于ask一价数量），吃掉全部ask一价，剩余部分上架
+3.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.two_ask_eat_one_bid.TestTwoAskEatOneBidTrade: 模拟深度->挂2个价格的Ask->吃Bid（Bid一价全部交易）测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c11',1)">详情</a></td>
+    </tr>
+
+<tr id='pt11.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>twoAskEatOnebid: tester01申报2个ask，吃掉test02申报的全部bid一价</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt11.1')" >
+        通过</a>
+    <div id='div_pt11.1' class="popup_window">
+        <pre>pt11.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7048.460000***|***1.243000***|
+    |***7045.050000***|***0.389000***|
+ASK |***7022.150000***|***0.163000***|
+    |***7011.790000***|***2.611000***|
+    |***7005.640000***|***1.128000***|
+———————————————————————————————————————
+    |***6965.290000***|***3.604000***|
+    |***6953.170000***|***0.674000***|
+BID |***6949.560000***|***0.940000***|
+    |***6929.580000***|***2.317000***|
+    |***6908.220000***|***0.744000***|
+--------------------------------------
+--------------------------------------
+
+
+Ask申报1 价格:6962.920000 数量:2.555000
+
+
+Ask申报2 价格:6959.680000 数量:1.049000
+
+
+交易总价: 25090.96492
+
+
+tester01可用btc: 90.862
+tester01冻结btc: 5.534
+tester01可用usdt: 1025040.78299016
+tester02可用btc: 103.600396
+tester02可用usdt: 942494.45956
+tester02冻结usdt: 32414.57552
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户1挂一个ask（价格小于bid一价，数量小于bid一价数量），吃掉部分bid一价
+3.用户1挂一个ask（价格小于bid一价，数量等于剩余bid一价数量），吃掉剩余bid一价
+4.验证后面两次挂ask的订单状态
+5.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.two_bid_eat_one_ask.TestTwoBidEatOneAskTrade: 模拟深度->挂2个价格的Bid->吃Ask（Ask一价全部交易）测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c12',1)">详情</a></td>
+    </tr>
+
+<tr id='pt12.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>twoBidEatOneAsk: tester01申报2个ask，吃掉test02申报的全部bid一价</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt12.1')" >
+        通过</a>
+    <div id='div_pt12.1' class="popup_window">
+        <pre>pt12.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7078.850000***|***0.021000***|
+    |***7074.970000***|***2.258000***|
+ASK |***7051.920000***|***2.488000***|
+    |***7014.050000***|***4.246000***|
+    |***7002.890000***|***2.929000***|
+———————————————————————————————————————
+    |***6975.650000***|***1.145000***|
+    |***6944.600000***|***2.284000***|
+BID |***6921.210000***|***4.768000***|
+    |***6905.860000***|***4.889000***|
+    |***6905.730000***|***3.141000***|
+--------------------------------------
+--------------------------------------
+
+
+Ask申报1 价格:7013.270000 数量:0.322000
+
+
+Ask申报2 价格:7004.560000 数量:2.607000
+
+
+交易总价: 20511.46481
+
+
+tester01可用btc: 88.058
+tester01冻结btc: 9.013
+tester01可用usdt: 1020490.95334519
+tester02可用btc: 102.923142
+tester02可用usdt: 867185.97279
+tester02冻结usdt: 112302.5624
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户2挂一个bid（价格小于ask二价大于ask一价，数量小于ask一价数量），吃掉部分ask一价
+3.用户2挂一个bid（价格小于ask二价大于ask一价，数量等于剩余ask一价数量），吃掉剩余ask一价
+4.验证后面两次挂bid的订单状态
+5.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.ask_eat_bid_cancelbid.TestAskEatBidCancelBidTrade: 模拟深度->挂Ask->吃Bid（Bid一价部分交易）->bid一价撤单测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c13',1)">详情</a></td>
+    </tr>
+
+<tr id='pt13.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>askBidCancelBid: tester01申报ask，吃掉test02申报的bid一价一部分</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt13.1')" >
+        通过</a>
+    <div id='div_pt13.1' class="popup_window">
+        <pre>pt13.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7099.590000***|***4.562000***|
+    |***7080.040000***|***3.363000***|
+ASK |***7063.430000***|***4.464000***|
+    |***7057.200000***|***3.892000***|
+    |***7004.550000***|***0.415000***|
+———————————————————————————————————————
+    |***6976.470000***|***1.052000***|
+    |***6943.880000***|***4.702000***|
+BID |***6939.860000***|***4.497000***|
+    |***6914.180000***|***2.305000***|
+    |***6905.110000***|***4.095000***|
+--------------------------------------
+--------------------------------------
+
+
+Ask申报 价格:6932.670000 数量:0.442000
+
+
+交易总价: 3064.24014
+
+
+tester01可用btc: 82.862
+tester01冻结btc: 16.696
+tester01可用usdt: 1003058.11165972
+tester02可用btc: 100.441558
+tester02可用usdt: 884607.82863
+tester02冻结usdt: 112327.93123
+
+
+撤单的id： 231000
+
+
+撤单后的各账户货币数量：
+
+
+tester01可用btc: 82.862
+tester01冻结btc: 16.696
+tester01可用usdt: 1003058.11165972
+tester02可用btc: 100.441558
+tester02可用usdt: 888863.47533
+tester02冻结usdt: 108072.28453
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户1挂一个ask（价格小于bid一价，数量小于bid一价数量），吃掉部分bid一价
+3.用户2部分成交的bid挂单进行撤单
+4.验证用户1第二次挂单的订单状态
+5.验证用户2撤单的订单状态
+6.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.bid_eat_ask_cancelask.TestBidEatAskCancelAskTrade: 模拟深度->挂Bid->吃Ask（Bid一价部分交易）->Ask一价撤单测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c14',1)">详情</a></td>
+    </tr>
+
+<tr id='pt14.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>bidAskCancelAsk: tester02申报bid，吃掉test01申报的ask一价一部分</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt14.1')" >
+        通过</a>
+    <div id='div_pt14.1' class="popup_window">
+        <pre>pt14.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7095.240000***|***2.374000***|
+    |***7083.950000***|***4.087000***|
+ASK |***7040.190000***|***0.266000***|
+    |***7019.750000***|***1.106000***|
+    |***7005.590000***|***2.067000***|
+———————————————————————————————————————
+    |***6976.000000***|***4.753000***|
+    |***6947.470000***|***1.903000***|
+BID |***6941.030000***|***1.410000***|
+    |***6930.940000***|***3.018000***|
+    |***6908.110000***|***3.753000***|
+--------------------------------------
+--------------------------------------
+
+
+Bid申报 价格:7071.890000 数量:0.886000
+
+
+交易总价: 6206.95274
+
+
+tester01可用btc: 90.1
+tester01冻结btc: 9.014
+tester01可用usdt: 1006200.74578726
+tester02可用btc: 100.884228
+tester02可用usdt: 890784.5178
+tester02冻结usdt: 103008.52946
+
+
+撤单的id： 231014
+
+
+撤单后的各账户货币数量：
+
+
+tester01可用btc: 91.281
+tester01冻结btc: 7.833
+tester01可用usdt: 1006200.74578726
+tester02可用btc: 100.884228
+tester02可用usdt: 890784.5178
+tester02冻结usdt: 103008.52946
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户2挂一个bid（价格大于ask一价，数量小于ask一价数量），吃掉部分ask一价
+3.用户1部分成交的ask挂单进行撤单
+4.验证用户2第二次挂单的订单状态
+5.验证用户1撤单的订单状态
+6.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.ask_eat_bid_cancelask.TestAskEatBidCancelAskTrade: 模拟深度->挂Ask->吃Bid（Bid一价全部交易）->剩余Ask撤单测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c15',1)">详情</a></td>
+    </tr>
+
+<tr id='pt15.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>askBidCancelAsk: tester01申报ask，吃掉test02申报的全部bid一价，剩余部分进入深度图后撤单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt15.1')" >
+        通过</a>
+    <div id='div_pt15.1' class="popup_window">
+        <pre>pt15.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7082.460000***|***4.338000***|
+    |***7079.740000***|***2.336000***|
+ASK |***7077.550000***|***4.264000***|
+    |***7072.090000***|***4.613000***|
+    |***7030.010000***|***4.955000***|
+———————————————————————————————————————
+    |***6992.280000***|***3.242000***|
+    |***6979.940000***|***2.814000***|
+BID |***6963.960000***|***0.044000***|
+    |***6943.730000***|***1.197000***|
+    |***6934.580000***|***2.874000***|
+--------------------------------------
+--------------------------------------
+
+
+Ask申报 价格:6981.420000 数量:4.470000
+
+
+交易总价: 22633.76364
+
+
+tester01可用btc: 75.024
+tester01冻结btc: 21.734
+tester01可用usdt: 1022588.49611272
+tester02可用btc: 103.238758
+tester02可用usdt: 929176.64323
+tester02冻结usdt: 48189.59313
+
+
+撤单的id： 231031
+
+
+撤单后的各账户货币数量：
+
+
+tester01可用btc: 76.252
+tester01冻结btc: 20.506
+tester01可用usdt: 1022588.49611272
+tester02可用btc: 103.238758
+tester02可用usdt: 929176.64323
+tester02冻结usdt: 48189.59313
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户1挂一个ask（价格小于bid一价，大于bid二价，数量大于bid一价数量），吃掉全部bid一价，剩余部分上架
+3.用户1第二次挂单的剩余部分撤单
+4.验证撤单的订单状态
+5.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>CTCIT.do_test.bid_eat_ask_cancelbid.TestBidEatAskCancelBidTrade: 模拟深度->挂Bid->吃Ask（Ask一价全部交易）->剩余Bid上架测试</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c16',1)">详情</a></td>
+    </tr>
+
+<tr id='pt16.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>bidAskCancelBid: tester02申报bid，吃掉test01申报的全部ask一价，剩余部分进入深度图</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt16.1')" >
+        通过</a>
+    <div id='div_pt16.1' class="popup_window">
+        <pre>pt16.1: *******当前深度图*******
+--------------------------------------
+----------#price#----------#count#----
+    |***7080.020000***|***1.493000***|
+    |***7063.860000***|***3.394000***|
+ASK |***7045.150000***|***1.155000***|
+    |***7020.750000***|***4.527000***|
+    |***7020.090000***|***3.334000***|
+———————————————————————————————————————
+    |***6956.440000***|***1.066000***|
+    |***6949.920000***|***1.153000***|
+BID |***6919.830000***|***0.982000***|
+    |***6918.830000***|***2.246000***|
+    |***6906.560000***|***0.362000***|
+--------------------------------------
+--------------------------------------
+
+
+Bid申报 价格:7020.320000 数量:4.622000
+
+
+交易总价: 23404.98006
+
+
+tester01可用btc: 86.097
+tester01冻结btc: 10.569
+tester01可用usdt: 1023381.57507994
+tester02可用btc: 103.327332
+tester02可用usdt: 927288.88502
+tester02冻结usdt: 49306.13492
+
+
+撤单的id： 231042
+
+
+撤单后的各账户货币数量：
+
+
+tester01可用btc: 86.097
+tester01冻结btc: 10.569
+tester01可用usdt: 1023381.57507994
+tester02可用btc: 103.327332
+tester02可用usdt: 936331.05718
+tester02冻结usdt: 40263.96276
+
+
+测试用例说明:
+1.用户1挂5个ask，用户2挂5个bid，形成深度图
+2.用户2挂一个bid（价格大于ask一价，小于ask二价，数量大于ask一价数量），吃掉全部bid一价，剩余部分上架
+3.用户2第二次挂单的剩余部分撤单
+4.验证撤单的订单状态
+5.验证用户1和用户2的各货币金额
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+        <tr id='total_row'>
+            <td>总计</td>
+            <td>20</td>
+            <td>20</td>
+            <td>0</td>
+            <td>0</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+        <div id='ending'>&nbsp;</div>
+        
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart'));
+        // 指定图表的配置项和数据
+        var option = {
+            title : {
+                text: '测试执行情况',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            color: ['#95b75d', 'grey', '#b64645'],
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['通过','失败','错误']
+            },
+            series : [
+                {
+                    name: '测试执行情况',
+                    type: 'pie',
+                    radius : '60%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:20, name:'通过'},
+                        {value:0, name:'失败'},
+                        {value:0, name:'错误'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+    </div>
+</body>
+</html>
