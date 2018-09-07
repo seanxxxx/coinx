@@ -63,3 +63,30 @@ def f(x):
 
 r = map(f,l)
 print(list(r))
+
+
+def not_empty(s):
+    return s and s.strip()
+
+print(list(filter(not_empty, ['A', '', 'B', None, 'C', '  '])))
+
+def build(x, y):
+    return lambda: x * x + y * y
+
+f = build(1,2)
+
+print(f())
+print(f.__name__)
+
+def log(func):
+    def wrapper(*args,**kw):
+        print('call %s():' % func.__name__)
+        return func(*args,**kw)
+    return wrapper
+
+@log
+def now():
+    print("007")
+
+print(now())
+
